@@ -1,0 +1,175 @@
+body {
+    position: relative;
+    background: url('mannn.jpg') no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+#mainstart{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 1;
+    overflow-y: hidden; 
+    overflow-x: auto; 
+    display: flex;
+    gap: 10px;
+}
+#pocetna{
+    position: absolute;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 950px;
+    transition: transform 0.4s ease-in-out;
+}
+#pocetna:hover{
+    transform: scale(1.2);
+}
+#onama{
+    position: absolute;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 1100px;
+    transition: transform 0.4s ease-in-out;
+}
+#onama:hover{
+    transform: scale(1.2);
+}
+#title{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    font-family: cursive;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-left: 5px;
+    display: none;
+}
+#welcome{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 100px;
+    margin-top: 120px;
+    margin-left: 350px;
+    letter-spacing: 10px;
+}
+#startbtn{
+    position: absolute;
+    width: 200px;
+    border: none;
+    height: 40px;
+    color: white;
+    background-color: brown;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bolder;
+    margin-top: 580px;
+    margin-left: 300px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s;
+}
+#startbtn:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 7px lightskyblue;
+}
+#kratkiopis{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 300px;
+    margin-left: 300px;
+    line-height: 40px;
+}
+#titleimage{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    margin-left: 10px;
+    margin-top: -12;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #mainstart {
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #pocetna {
+        position: absolute;
+        font-size: 18px;
+        margin-top: -5px;
+        margin-left: 80px;
+    }
+
+    #onama {
+        position: absolute;
+        font-size: 18px;
+        margin-top: -5px;
+        margin-left: 250px;
+    }
+
+    #titleimage {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: -300px;
+        margin-top: 2px;
+    }
+
+    #welcome {
+        position: absolute;
+        font-size: 30px;
+        margin-top: 115px;
+        margin-left: 50px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #kratkiopis {
+        position: absolute;
+        font-size: 16px;
+        margin-top: 220px;
+        margin-left: 70px;
+        line-height: 19px;
+    }
+
+    #startbtn {
+        position: absolute;
+        margin-top: 575px;
+        margin-left: 90px;
+        font-size: 14px;
+        width: 170px;
+        height: 30px;
+        color: wheat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
